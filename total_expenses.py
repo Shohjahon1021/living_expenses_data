@@ -1,3 +1,4 @@
+import json
 # Calculate the total expenses
 def total_expenses(monthly_expenses: dict) -> int:
     """
@@ -7,4 +8,8 @@ def total_expenses(monthly_expenses: dict) -> int:
     Returns:
         total_expenses: total expenses
     """
-    return 
+    dic = json.dumps(f)
+    return type(dic)
+
+f = open('data.json').read()
+print(total_expenses(f))
